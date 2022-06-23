@@ -205,8 +205,6 @@ let products = {
     });
   });
 
-  
-  //Initially display all products
   window.onload = () => {
     filterProduct("all");
   };
