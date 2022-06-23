@@ -13,3 +13,23 @@ body {
   width: 65%;
   margin: 50px auto;
 }
+#search-container {
+  margin: 1em 0;
+}
+#search-container input {
+  background-color: transparent;
+  width: 40%;
+  border-bottom: 2px solid #110f29;
+  padding: 1em 0.3em;
+}
+#search-container input:focus {
+  border-bottom-color: #6759ff;
+}
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #F6C90E;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
