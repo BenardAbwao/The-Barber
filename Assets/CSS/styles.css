@@ -23,7 +23,7 @@ body {
   padding: 1em 0.3em;
 }
 #search-container input:focus {
-  border-bottom-color: #6759ff;
+  border-bottom-color: grey;
 }
 #search-container button {
   padding: 1em 2em;
@@ -34,15 +34,15 @@ body {
   margin-top: 0.5em;
 }
 .button-value {
-  border: 2px solid #6759ff;
+  border: 2px solid grey;
   padding: 1em 2.2em;
   border-radius: 3em;
   background-color: transparent;
-  color: #6759ff;
+  color: gray;
   cursor: pointer;
 }
 .active {
-  background-color: #6759ff;
+  background-color: gray;
   color: #ffffff;
 }
 #products {
