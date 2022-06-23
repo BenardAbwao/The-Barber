@@ -3,9 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Window Market</title>
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="./Assets/CSS/styles.css" />
   </head>
   <body>
@@ -22,8 +20,14 @@
         <button class="button-value" onclick="filterProduct('Haircut')"> Haircut Styles </button>
       </div>
       <div id="products"></div>
+      
+      <form id="review-form">
+        <label for="review">Your Review:</label>
+        <textarea id="review"></textarea>
+        <button type="submit">Add review</button>
+      </form>
     </div>
-    <!-- Script -->
+
     <script src="index.js"></script>
   </body>
 </html>
