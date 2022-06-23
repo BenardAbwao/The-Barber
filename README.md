@@ -1,5 +1,7 @@
 # The Window Market
  ## By Benard Abwao
+ ## Screenshot
+ ![image](./Assets/Images/The%20window.jpg)
 
  ## Table of Content
  - [Description](#description)
