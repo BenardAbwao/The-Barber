@@ -1,3 +1,11 @@
+
+let getSearchTerm = () =>{
+  const data = 'http://localhost:3000/data'
+  fetch(data)
+  .then(response => response.json())
+  .then(response => console.log(response));
+}
+
 let products = {
     data: [
       {
@@ -137,6 +145,7 @@ let products = {
       
     ]
   }
+
   for (let i of products.data) {
     let card = document.createElement("div");
     card.classList.add("card", i.category, "hide");
@@ -204,21 +213,24 @@ let products = {
       }
     });
   });
-  productsReviewForm.addEventListener('submit', (env) => {
-    env.preventDefault();
+  let productsReviewForm =() => {
+   productsReviewForm.addEventListener('submit', (env) => {
+     env.preventDefault();
     console.log(`review form ID: ${products.id}`)
-    console.log('---------------------------------')
-    if(productsReviewText.value !== ''){
+     console.log('---------------------------------')
+     if(productsReviewText.value !== ''){
         
-        products.reviews.push(productsReviewText.value)
-        patchBeer(products)
-    } else{
-        alert('Review is empty string!!')
-    }
-});
+         products.reviews.push(productsReviewText.value)
+         patchBeer(products)
+     } else{
+         alert('Review is empty string!!')
+     }
+     
+ });
   window.onload = () => {
     filterProduct("all");
   };
+}
 
-
+console.log(products);
 
