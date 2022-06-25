@@ -7,68 +7,67 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #f5f8ff;
+  background-color: #ffff;
 }
 .wrapper {
   width: 65%;
-  margin: 50px auto;
+  margin: 60px auto;
 }
 #search-container {
-  margin: 1em 0;
+  margin: 20px 0;
 }
 #search-container input {
-  background-color: transparent;
-  width: 40%;
-  border-bottom: 2px solid #110f29;
-  padding: 1em 0.3em;
+
+  width: 65%;
+  border-bottom: 2px solid #29282b;
+  padding: 10px 5px;
 }
 #search-container input:focus {
-  border-bottom-color: grey;
+  border-bottom-color: rgb(170, 164, 164);
 }
 #search-container button {
-  padding: 1em 2em;
-  margin-left: 1em;
-  background-color: #F6C90E;
+  padding: 15px 20px;
+  margin-left: 10px;
+  background-color: #0e1df6;
   color: #ffffff;
-  border-radius: 5px;
-  margin-top: 0.5em;
+  margin-top: 5px;
 }
 .button-value {
-  border: 2px solid grey;
-  padding: 1em 2.2em;
-  border-radius: 3em;
+  border: 2px solid rgb(122, 121, 121);
+  padding: 15px 27px;
+  border-radius: 30px;
   background-color: transparent;
   color: gray;
   cursor: pointer;
 }
 .active {
-  background-color: gray;
-  color: #ffffff;
-}
+  background-color: rgb(128, 128, 128);
+  color: #d8d4d4;
+} 
 #products {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-column-gap: 1.5em;
-  padding: 2em 0;
+  grid-column-gap: 20px;
+  padding: 20px 0;
 }
 .card {
-  background-color: #ffffff;
-  max-width: 18em;
-  margin-top: 1em;
-  padding: 1em;
+  background-color: #dfd0d0;
+  max-width: 100%;
+  margin-top: 20px;
+  padding: 10px;
   border-radius: 5px;
-  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
-}
+  box-shadow: 10px 20px 25px rgba(1, 2, 68, 0.08);
+} 
 .image-container {
   text-align: center;
 }
 img {
   max-width: 100%;
   object-fit: contain;
-  height: 15em;
+  height: 160px;
 }
 .container {
-  padding-top: 1em;
+  padding-top: 16px;
   color: #110f29;
 }
 .container h5 {
@@ -77,18 +76,35 @@ img {
 .hide {
   display: none;
 }
+#review-lable{
+  color: black;
+  padding: 10px 5px 5px;
+}
+#submit-review {
+  padding: 15px 20px;
+  margin-left: 10px;
+  background-color: #0e1df6;
+  color: #ffffff;
+  margin-top: 5px;
+
+}
+#review{
+  border: 1px solid;
+  max-width: 40%;
+  margin-top: 10px;
+}
 @media screen and (max-width: 720px) {
   img {
     max-width: 100%;
     object-fit: contain;
-    height: 10em;
+    height: 160px;
   }
   .card {
-    max-width: 10em;
-    margin-top: 1em;
+    max-width: 160px;
+    margin-top: 16px;
   }
   #products {
     grid-template-columns: auto auto;
-    grid-column-gap: 1em;
+    grid-column-gap: 16px;
   }
 }
