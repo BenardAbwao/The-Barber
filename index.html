@@ -3,24 +3,36 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Window Market</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./Assets/CSS/styles.css" />
   </head>
   <body>
     <div class="wrapper">
       <div id="search-container">
-        <input type="search" id="search-input" placeholder="Enter product name here.." />
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Enter product name here.."
+        />
         <button id="search">Search</button>
-
       </div>
       <div id="buttons">
-        <button class="button-value" onclick="filterProduct('all')"> All </button>
-        <button class="button-value" onclick="filterProduct('style')"> Hairstyles </button>
-        <button class="button-value" onclick="filterProduct('Cosmetics')"> Cosmetics </button>
-        <button class="button-value" onclick="filterProduct('Haircut')"> Haircut Styles </button>
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('style')">
+          Hairstyles
+        </button>
+        <button class="button-value" onclick="filterProduct('Cosmetics')">
+          Cosmetics
+        </button>
+        <button class="button-value" onclick="filterProduct('Haircut')">
+          Haircut Styles
+        </button>
       </div>
       <div id="products"></div>
-      
+
       <form id="review-form">
         <label id="review-lable" for="review">Leave a Review:</label>
         <textarea id="review"></textarea>
@@ -29,5 +41,8 @@
     </div>
 
     <script src="index.js"></script>
+    <div class="coppy">
+      <h5>&copy; Benard Abwao</h5>
+    </div>
   </body>
 </html>

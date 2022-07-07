@@ -93,6 +93,9 @@ img {
   max-width: 40%;
   margin-top: 10px;
 }
+.coppy{
+  text-align: center;
+}
 @media screen and (max-width: 720px) {
   img {
     max-width: 100%;
